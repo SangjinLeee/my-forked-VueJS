@@ -20,7 +20,7 @@ import HelloWorld from './components/HelloWorld.vue'
   margin-top: 60px;
 }
 
- .button{
+.button{
    padding: 5px;
    color: blue;
 }
@@ -81,6 +81,7 @@ p {
     transform: scale(0.8);
   }
 }
+
 
 
 
