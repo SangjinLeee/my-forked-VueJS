@@ -20,119 +20,68 @@ import HelloWorld from './components/HelloWorld.vue'
   margin-top: 60px;
 }
 
-.card{
-  border-radius: 24px;
-  border: 3px solid #041E42;
-  padding: 8px;
+ .button{
+   padding: 5px;
+   color: blue;
+}
+
+.button:hover{
+  background-color: orange;
+}
+
+.button:focus {
+  background-color: orange; 
+}
+
+
+.all{
+  border-width: 5px;
   width: 400px;
-  display: block;
+  max-width: 500px;
   margin: auto;
-  position: relative;
-  overflow: hidden;
-  box-shadow: 0px 8px 24px #999;
-  background-color: lightgrey;
-  text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.textbox{
-  font-size: 15px;
-  margin-left: 112px;
-  text-align: right;
-  border-radius: 24px;
-}
-
-.description{
-  text-shadow: -1px 1px 2px #FFFFFF,
-				  1px 1px 2px #FFFFFF,
-				  1px -1px 0 #FFFFFF,
-				  -1px -1px 0 #FFFFFF;
-}
-
-.haxbtn{
-  display:inline-block;
-  text-align: center;
-  color: white;
-  background-color: #041E42;
-  border-radius: 5px;
-  font-size: 20px;
-  width: 120px;
-  height: 32px;
-  box-shadow: 0px 10px 24px #999;
-  border: 1px solid #041E42;
-  visibility: visible;
-  padding-top: 10px;
-  margin-right: 32px;
-}
-
-.haxbtn:hover{
-  color: #e0e0e0;
-  background-color: #07377a;
-  box-shadow: 0px 10px 24px white;
-  border: 1px solid #07377a;
-}
-
-.haxbtn:focus{
-  color: #e0e0e0;
-  background-color: #07377a;
-  box-shadow: 0px 10px 24px white;
-  border: 1px solid #07377a;
+  margin-top: 10px;
 }
 
 .title{
-  color: white;
-  font-size: 24px;
-  text-shadow: -1px 1px 2px #000,
-				  1px 1px 2px #000,
-				  1px -1px 0 #000,
-				  -1px -1px 0 #000;
+  text-align: center;
+  font-size: 40px;
 }
 
-.giaImg{
-  width: 200px;
-  border-radius: 24px;
-  box-shadow: 0px 10px 24px #999;
-  float: left;
+.name{
+  text-align: center;
+}
+.content{
+   text-align: center;
+}
+img {
+  width: 300px;
 }
 
-.outsideBtn{
-  color: white;
-  background-color: #041E42;
-  border-radius: 5px;
-  font-size: 20px;
-  width: 120px;
-  height: 50px;
-  box-shadow: 0px 10px 24px #999;
-  border: 1px solid #041E42;
-  margin-right: 32px;
-  margin-bottom: 16px;
-  display: inline-block;
+p {
+/*   text-align: left;  */
+  text-indent: 5%;
+  font-size: 18px;
 }
 
-.outsideBtn:hover{
-  color: #e0e0e0;
-  background-color: #07377a;
-  box-shadow: 0px 10px 24px white;
-  border: 1px solid #07377a;
+.detailsButton {
+  margin: 12px;
+  position: center; 
+  color: blue;
 }
 
-.outsideBtn:focus{
-  color: #e0e0e0;
-  background-color: #07377a;
-  box-shadow: 0px 10px 24px white;
-  border: 1px solid #07377a;
+  @media (min-width: 500px) and (max-width: 800px) {
+    
+    .detailsButton {
+      display: none;
+    }
 }
 
-.basic{
-  background-color: hotpink;
+@media (max-width: 500px) {
+  .all{
+    transform: scale(0.8);
+  }
 }
 
-.hoverCard{
-  border: 3px solid purple;
-  box-shadow: 0px 8px 24px yellow;
-}
-
-input:checked + label + .description { display:none; }
 
 
 
